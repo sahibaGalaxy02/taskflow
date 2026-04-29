@@ -45,7 +45,7 @@ const AddTaskModal = ({ boardId, defaultStatus = 'todo', editTask = null, onClos
       dueDate: form.dueDate || null,
       boardId,
     };
-
+    
     let res;
     if (isEditing) {
       res = await dispatch(updateTask({ id: editTask._id, data: payload }));
